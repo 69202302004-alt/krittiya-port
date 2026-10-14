@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - มิ้น</title>
+    <title>About Me - มิ้ล</title>
     <!-- โหลด Tailwind CSS จาก CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- โหลดฟอนต์ภาษาไทย (ตัวอย่างใช้ฟอนต์ Kanit จาก Google Fonts เพื่อความสวยงาม) -->
@@ -52,11 +52,15 @@
 
         <div class="p-8 md:p-12 lg:p-16">
             
-            <header class="text-center mb-12 relative">
+            <header class="text-center mb-12 relative flex flex-col items-center">
                 <!-- ตกแต่งดาวน่ารักๆ -->
                 <div class="absolute top-0 left-10 md:left-20 text-yellow-300 text-2xl hidden sm:block">⭐</div>
                 <div class="absolute top-6 right-10 md:right-20 text-yellow-300 text-xl hidden sm:block">✨</div>
                 
+                <!-- เพิ่มรูปภาพโปรไฟล์ -->
+                <!-- คุณสามารถเปลี่ยน URL รูปภาพใน src เป็นรูปของคุณได้เลย เช่น "images/profile.jpg" หากคุณวางรูปไว้ในโฟลเดอร์ images -->
+                <img src="https://placehold.co/150x150/ffc0cb/ffffff?text=Profile" alt="Profile Picture" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-pink-100 shadow-md mb-6 transition-transform hover:scale-105">
+
                 <h1 class="text-5xl md:text-6xl font-bold tracking-wider mb-2 text-gray-800" style="font-family: 'Fredoka One', cursive, 'Kanit', sans-serif;">About Me</h1>
                 <h2 class="text-2xl text-gray-500 font-light mt-2">เกี่ยวกับฉัน</h2>
             </header>
@@ -142,10 +146,7 @@
             <div class="mt-16 pt-8 border-t border-gray-100">
                 <h3 class="text-xl font-bold text-center text-gray-800 mb-6">ช่องทางติดต่อ</h3>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 text-gray-600">
-                    <a href="tel:0981064803" class="flex items-center group hover:text-pink-500 transition-colors bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
-                        <span class="mr-3 text-2xl group-hover:scale-110 transition-transform">📱</span> 
-                        <span class="font-medium tracking-wide">098-106-4803</span>
-                    </a>
+                    <!-- นำเบอร์โทรศัพท์ออก -->
                     <a href="mailto:69202302004@scphkk.ac.th" class="flex items-center group hover:text-blue-500 transition-colors bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
                         <span class="mr-3 text-2xl group-hover:scale-110 transition-transform">✉️</span> 
                         <span class="font-medium truncate max-w-[200px] sm:max-w-none">69202302004@scphkk.ac.th</span>
