@@ -3,133 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - กฤตติยา โพธิ์เวียงคำ</title>
+    <title>About Me - Krittiya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Mali', cursive;
-            background-color: #f3f8f9;
-            color: #4a4a4a;
-        }
-        .pastel-shadow {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-        }
-        .dotted-border {
-            border: 2px dashed #b5d5e0;
+            font-family: 'Kanit', sans-serif;
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+<body class="bg-pink-50 text-gray-800 min-h-screen flex items-center justify-center p-4">
 
-    <!-- Card Container -->
-    <div class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden pastel-shadow relative my-8">
+    <div class="max-w-3xl w-full bg-white rounded-3xl shadow-xl overflow-hidden">
         
-        <!-- Header Color Bars -->
-        <div class="flex h-4 w-full">
-            <div class="flex-1 bg-[#ffd6d6]"></div>
-            <div class="flex-1 bg-[#fff0b3]"></div>
-            <div class="flex-1 bg-[#d6e8f0]"></div>
+        <!-- Header Image & Profile -->
+        <div class="bg-rose-100 flex flex-col items-center pt-10 pb-6 relative">
+            <div class="w-40 h-40 rounded-full border-4 border-white shadow-lg overflow-hidden mb-4 bg-white">
+                <img src="IMG_20250625_185437.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-3xl font-semibold text-gray-800 mb-1">นางสาวกฤตติยา โพธิ์เวียงคำ (มิ้ล)</h1>
+            <p class="text-rose-600 font-medium text-lg">นักศึกษา</p>
         </div>
 
-        <div class="p-8 sm:p-10">
-            <!-- Title -->
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-bold text-[#5c6b73] mb-2 tracking-wider">About Me</h1>
-                <p class="text-xl text-[#8fa3ad]">เกี่ยวกับฉัน</p>
-                <div class="w-16 h-1 bg-[#fff0b3] mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <!-- Profile & Info Section -->
-            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
-                
-                <!-- Profile Image (รูปหน้าตรง) -->
-                <div class="relative w-32 h-32 sm:w-40 sm:h-40 shrink-0 mx-auto sm:mx-0 border-4 border-white rounded-full overflow-hidden shadow-md bg-[#fdf2f2]">
-                    <img src="1790137156036.jpg" alt="Profile Picture" class="w-full h-full object-cover" onerror="this.src='https://raw.githubusercontent.com/69202302004-alt/krittiya-port/main/1790137156036.jpg'">
+        <!-- Content Section -->
+        <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Left Column -->
+            <div class="space-y-6">
+                <!-- About Me -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">เกี่ยวกับฉัน</h2>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-medium">ชื่อเล่น:</span> มิ้ล</li>
+                        <li><span class="font-medium">อายุ:</span> 19 ปี</li>
+                        <li><span class="font-medium">ศาสนา:</span> พุทธ</li>
+                        <li><span class="font-medium">สัญชาติ:</span> ไทย</li>
+                    </ul>
                 </div>
 
-                <!-- Personal Info Box -->
-                <div class="bg-[#fbfcfa] w-full rounded-2xl p-6 dotted-border flex-1">
-                    <ul class="space-y-4 text-lg">
-                        <li class="flex border-b border-gray-100 pb-2">
-                            <span class="w-24 font-semibold text-[#7b93a4]">ชื่อ :</span> 
-                            <span>นางสาวกฤตติยา โพธิ์เวียงคำ</span>
-                        </li>
-                        <li class="flex border-b border-gray-100 pb-2">
-                            <span class="w-24 font-semibold text-[#7b93a4]">ชื่อเล่น :</span> 
-                            <span>มิ้ล</span>
-                        </li>
-                        <li class="flex">
-                            <span class="w-24 font-semibold text-[#7b93a4]">อายุ :</span> 
-                            <span>18 ปี</span>
+                <!-- Education -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">การศึกษา</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        กำลังศึกษาที่ <br> 
+                        <span class="font-medium">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</span>
+                    </p>
+                </div>
+                
+                <!-- Contact -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">ช่องทางติดต่อ</h2>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            69202302004@scphkk.ac.th
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Detail Sections -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+            <!-- Right Column -->
+            <div class="space-y-6">
                 
-                <!-- Left Column -->
-                <div class="space-y-8">
-                    <!-- Motto -->
-                    <div>
-                        <h2 class="text-2xl font-semibold text-[#5c6b73] mb-3 inline-block border-b-4 border-[#ffd6d6] pb-1">คติประจำใจ</h2>
-                        <p class="text-lg leading-relaxed bg-[#fdf2f2] p-4 rounded-xl">
-                            ความพยายามอยู่ที่ไหน<br>
-                            ความสำเร็จอยู่ที่นั่น
-                        </p>
-                    </div>
+                <!-- Goals & Motto -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">ความใฝ่ฝัน</h2>
+                    <p class="text-gray-700 mb-4">นักวิชาการสาธารณสุข</p>
 
-                    <!-- Dream -->
-                    <div>
-                        <h2 class="text-2xl font-semibold text-[#5c6b73] mb-3 inline-block border-b-4 border-[#fff0b3] pb-1">ความใฝ่ฝัน</h2>
-                        <p class="text-lg flex items-center gap-2">
-                            <span class="text-2xl">✨</span> นักวิชาการสาธารณสุข
-                        </p>
-                    </div>
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">คติประจำใจ</h2>
+                    <p class="text-gray-700 italic">"ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"</p>
                 </div>
 
-                <!-- Right Column -->
-                <div class="space-y-8">
-                    <!-- Hobbies -->
-                    <div>
-                        <h2 class="text-2xl font-semibold text-[#5c6b73] mb-3 inline-block border-b-4 border-[#d6e8f0] pb-1">งานอดิเรก</h2>
-                        <ul class="text-lg space-y-3">
-                            <li class="flex items-center gap-3"><span class="bg-[#e8f0f3] p-2 rounded-full text-sm">📖</span> อ่านหนังสือ</li>
-                            <li class="flex items-center gap-3"><span class="bg-[#fcf3e8] p-2 rounded-full text-sm">🎵</span> ฟังเพลง</li>
-                            <li class="flex items-center gap-3"><span class="bg-[#fbe8e8] p-2 rounded-full text-sm">🎬</span> ดูหนัง</li>
-                        </ul>
-                    </div>
-
-                    <!-- Favorite Colors -->
-                    <div>
-                        <h2 class="text-2xl font-semibold text-[#5c6b73] mb-3 inline-block border-b-4 border-[#ffd6d6] pb-1">สีที่ชอบ</h2>
-                        <div class="flex gap-4 mt-2">
-                            <div class="w-8 h-8 rounded-full bg-[#ffd6d6] shadow-sm"></div>
-                            <div class="w-8 h-8 rounded-full bg-[#fff0b3] shadow-sm"></div>
-                            <div class="w-8 h-8 rounded-full bg-[#d6e8f0] shadow-sm"></div>
-                        </div>
-                    </div>
+                <!-- Hobbies -->
+                <div class="bg-rose-50 p-5 rounded-2xl h-full">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">งานอดิเรก</h2>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside mt-2">
+                        <li>อ่านหนังสือ</li>
+                        <li>ฟังเพลง</li>
+                        <li>ดูหนัง</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Lifestyle Image Section (รูปบรรยากาศสนามหญ้า) -->
-            <div class="mb-10 rounded-2xl overflow-hidden shadow-sm border-4 border-white pastel-shadow h-64 sm:h-80">
-                <img src="IMG_20250625_185437.jpg" alt="Lifestyle Picture" class="w-full h-full object-cover object-center" onerror="this.src='https://raw.githubusercontent.com/69202302004-alt/krittiya-port/main/IMG_20250625_185437.jpg'">
-            </div>
-
-            <!-- Contact Section -->
-            <div class="text-center bg-[#f7f9fa] rounded-2xl p-6">
-                <h2 class="text-xl font-semibold text-[#7b93a4] mb-4">ช่องทางติดต่อ</h2>
-                <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm text-[#5c6b73]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8fa3ad]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>69202302004@scphkk.ac.th</span>
-                </div>
-            </div>
-
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-gray-50 text-center py-4 text-sm text-gray-400">
+            
         </div>
     </div>
 
