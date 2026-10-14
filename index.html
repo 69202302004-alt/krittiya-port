@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - มิ้น</title>
+    <!-- โหลด Tailwind CSS จาก CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- โหลดฟอนต์ภาษาไทย (ตัวอย่างใช้ฟอนต์ Kanit จาก Google Fonts เพื่อความสวยงาม) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- กำหนดสไตล์เพิ่มเติม เช่น ฟอนต์และการตั้งค่าสีที่อ้างอิงจากรูป -->
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            /* สีพื้นหลังแบบพาสเทลอ่อนๆ คล้ายในรูป */
+            background-color: #f7fbff; 
+        }
+        
+        /* สไตล์กำหนดสีพาสเทลที่ใช้ในส่วน 'สีที่ชอบ' */
+        .color-pink { background-color: #ffd6df; }
+        .color-yellow { background-color: #fef0cd; }
+        .color-blue { background-color: #d8eaf4; }
+
+        /* ปรับกรอบให้ดูมินิมอลมากขึ้น */
+        .minimal-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid #f1f5f9;
+        }
+
+        .pastel-box {
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            border: 2px dashed #cbd5e1;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen flex items-center justify-center p-4 sm:p-8">
+
+    <main class="max-w-4xl w-full minimal-card overflow-hidden relative">
+        
+        <!-- แถบสีตกแต่งด้านบนแบบมินิมอล -->
+        <div class="h-4 w-full flex">
+            <div class="h-full w-1/3 bg-pink-200"></div>
+            <div class="h-full w-1/3 bg-yellow-200"></div>
+            <div class="h-full w-1/3 bg-blue-200"></div>
+        </div>
+
+        <div class="p-8 md:p-12 lg:p-16">
+            
+            <header class="text-center mb-12 relative">
+                <!-- ตกแต่งดาวน่ารักๆ -->
+                <div class="absolute top-0 left-10 md:left-20 text-yellow-300 text-2xl hidden sm:block">⭐</div>
+                <div class="absolute top-6 right-10 md:right-20 text-yellow-300 text-xl hidden sm:block">✨</div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold tracking-wider mb-2 text-gray-800" style="font-family: 'Fredoka One', cursive, 'Kanit', sans-serif;">About Me</h1>
+                <h2 class="text-2xl text-gray-500 font-light mt-2">เกี่ยวกับฉัน</h2>
+            </header>
+
+            <section class="mb-16 flex justify-center">
+                <div class="pastel-box p-8 md:p-10 w-full md:w-3/4 relative">
+                    <!-- ตกแต่งไอคอนน่ารัก -->
+                    <div class="absolute -top-5 -left-3 text-4xl bg-white rounded-full p-1 shadow-sm">🐰</div>
+                    <div class="absolute -bottom-4 -right-3 text-3xl bg-white rounded-full p-1 shadow-sm">🐣</div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                        <div class="col-span-1 sm:col-span-3 pb-4 border-b border-gray-200 mb-2">
+                             <h3 class="text-lg text-gray-400 font-semibold uppercase tracking-widest mb-1 text-center">Profile</h3>
+                        </div>
+                        <div class="flex flex-col items-center sm:items-start">
+                            <span class="text-sm text-gray-400 font-semibold">ชื่อ-นามสกุล</span>
+                            <span class="text-lg font-medium text-gray-700">นางสาวกฤตติยา โพธิ์เวียงคำ</span>
+                        </div>
+                        <div class="flex flex-col items-center sm:items-start">
+                            <span class="text-sm text-gray-400 font-semibold">ชื่อเล่น</span>
+                            <span class="text-lg font-medium text-gray-700">มิ้ล</span>
+                        </div>
+                        <div class="flex flex-col items-center sm:items-start">
+                            <span class="text-sm text-gray-400 font-semibold">อายุ</span>
+                            <span class="text-lg font-medium text-gray-700">18 ปี</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                
+                <!-- คอลัมน์ซ้าย -->
+                <div class="space-y-10">
+                    <section class="relative">
+                        <div class="absolute -left-6 top-1 text-pink-300 opacity-50 text-4xl">❝</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-pink-200 inline-block pb-1">คติประจำใจ</h3>
+                        <p class="text-lg text-gray-600 font-medium pl-2 leading-relaxed">
+                            ความพยายามอยู่ที่ไหน <br> ความสำเร็จอยู่ที่นั่น
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-yellow-200 inline-block pb-1">ความใฝ่ฝัน</h3>
+                        <div class="bg-yellow-50 rounded-xl p-4 text-center text-lg text-gray-700 font-medium border border-yellow-100 shadow-sm transition-transform hover:scale-105">
+                            นักวิชาการสาธารณสุข 🏥
+                        </div>
+                    </section>
+                </div>
+
+                <!-- คอลัมน์ขวา -->
+                <div class="space-y-10">
+                    <section>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-200 inline-block pb-1">งานอดิเรก</h3>
+                        <ul class="space-y-3 text-lg text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center mr-3 text-sm">📖</span>
+                                อ่านหนังสือ
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-pink-100 text-pink-500 flex items-center justify-center mr-3 text-sm">🎵</span>
+                                ฟังเพลง
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-yellow-100 text-yellow-500 flex items-center justify-center mr-3 text-sm">🎬</span>
+                                ดูหนัง
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 inline-block pb-1">สีที่ชอบ</h3>
+                        <div class="flex gap-4 items-center pl-2">
+                            <div class="w-10 h-10 rounded-full color-pink shadow-sm transition-transform hover:scale-110 cursor-pointer" title="ชมพูพาสเทล"></div>
+                            <div class="w-10 h-10 rounded-full color-yellow shadow-sm transition-transform hover:scale-110 cursor-pointer" title="เหลืองพาสเทล"></div>
+                            <div class="w-10 h-10 rounded-full color-blue shadow-sm transition-transform hover:scale-110 cursor-pointer" title="ฟ้าพาสเทล"></div>
+                        </div>
+                    </section>
+                </div>
+                
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-6">ช่องทางติดต่อ</h3>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 text-gray-600">
+                    <a href="tel:0981064803" class="flex items-center group hover:text-pink-500 transition-colors bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
+                        <span class="mr-3 text-2xl group-hover:scale-110 transition-transform">📱</span> 
+                        <span class="font-medium tracking-wide">098-106-4803</span>
+                    </a>
+                    <a href="mailto:69202302004@scphkk.ac.th" class="flex items-center group hover:text-blue-500 transition-colors bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
+                        <span class="mr-3 text-2xl group-hover:scale-110 transition-transform">✉️</span> 
+                        <span class="font-medium truncate max-w-[200px] sm:max-w-none">69202302004@scphkk.ac.th</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ตกแต่งด้านล่างสุด -->
+            <div class="mt-12 text-center flex justify-center gap-3">
+                <span class="text-pink-300">🌷</span>
+                <span class="text-yellow-300">🌷</span>
+                <span class="text-blue-300">🌷</span>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
