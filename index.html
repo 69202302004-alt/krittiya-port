@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว - กฤตติยา โพธิ์เวียงคำ</title>
+    <title>About Me - Krittiya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -14,75 +12,84 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen py-10 px-4 sm:px-6 lg:px-8 text-gray-700 flex items-center justify-center">
+<body class="bg-pink-50 text-gray-800 min-h-screen flex items-center justify-center p-4">
 
-    <div class="max-w-4xl w-full bg-white/80 backdrop-blur-sm rounded-[2rem] shadow-xl overflow-hidden border border-white">
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-0">
+    <div class="max-w-3xl w-full bg-white rounded-3xl shadow-xl overflow-hidden">
+        
+        <!-- Header Image & Profile -->
+        <div class="bg-rose-100 flex flex-col items-center pt-10 pb-6 relative">
+            <div class="w-40 h-40 rounded-full border-4 border-white shadow-lg overflow-hidden mb-4 bg-white">
+                <img src="IMG_20250625_185437.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-3xl font-semibold text-gray-800 mb-1">นางสาวกฤตติยา โพธิ์เวียงคำ (มิ้ล)</h1>
+            <p class="text-rose-600 font-medium text-lg">นักศึกษา</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <!-- ด้านซ้าย: รูปภาพและข้อมูลหลัก -->
-            <div class="md:col-span-2 bg-pink-50/50 p-8 flex flex-col items-center text-center justify-center border-b md:border-b-0 md:border-r border-pink-100">
-                <div class="w-48 h-48 mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
-                    <!-- รูปโปรไฟล์อ้างอิงจากไฟล์รูปภาพ -->
-                    <img src="IMG_20250625_185437.jpg" alt="Profile Picture" class="w-full h-full object-cover">
-                </div>
-                <h1 class="text-2xl font-semibold text-gray-800 mb-1">นางสาวกฤตติยา โพธิ์เวียงคำ</h1>
-                <p class="text-lg text-pink-500 font-medium mb-4">(มิ้ล)</p>
-                <div class="bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-purple-600 border border-purple-100">
-                    ความใฝ่ฝัน: นักวิชาการสาธารณสุข
-                </div>
-            </div>
-
-            <!-- ด้านขวา: รายละเอียดประวัติ -->
-            <div class="md:col-span-3 p-8 sm:p-10">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center gap-2">
-                    <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                    เกี่ยวกับฉัน (About Me)
-                </h2>
-
-                <div class="space-y-4 text-gray-600">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-blue-50/50 p-4 rounded-xl">
-                            <span class="block text-sm text-gray-500 mb-1">อายุ</span>
-                            <span class="font-medium text-gray-800">19 ปี</span>
-                        </div>
-                        <div class="bg-purple-50/50 p-4 rounded-xl">
-                            <span class="block text-sm text-gray-500 mb-1">ศาสนา / สัญชาติ</span>
-                            <span class="font-medium text-gray-800">พุทธ / ไทย</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-green-50/50 p-4 rounded-xl">
-                        <span class="block text-sm text-gray-500 mb-1">การศึกษาปัจจุบัน</span>
-                        <span class="font-medium text-gray-800">กำลังศึกษาที่ วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</span>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-orange-50/50 p-4 rounded-xl">
-                            <span class="block text-sm text-gray-500 mb-1">งานอดิเรก</span>
-                            <ul class="list-disc list-inside font-medium text-gray-800 space-y-1">
-                                <li>อ่านหนังสือ</li>
-                                <li>ฟังเพลง</li>
-                                <li>ดูหนัง</li>
-                            </ul>
-                        </div>
-                        <div class="bg-pink-50/50 p-4 rounded-xl">
-                            <span class="block text-sm text-gray-500 mb-1">คติประจำใจ</span>
-                            <p class="font-medium text-gray-800 italic">"ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"</p>
-                        </div>
-                    </div>
+            <!-- Left Column -->
+            <div class="space-y-6">
+                <!-- About Me -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">เกี่ยวกับฉัน</h2>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-medium">ชื่อเล่น:</span> มิ้ล</li>
+                        <li><span class="font-medium">อายุ:</span> 19 ปี</li>
+                        <li><span class="font-medium">ศาสนา:</span> พุทธ</li>
+                        <li><span class="font-medium">สัญชาติ:</span> ไทย</li>
+                    </ul>
                 </div>
 
-                <hr class="my-8 border-gray-100">
-
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    ช่องทางติดต่อ
-                </h2>
-                <div class="inline-flex items-center gap-3 bg-gray-50 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors">
-                    <span class="font-medium text-gray-800 text-sm sm:text-base">69202302004@scphkk.ac.th</span>
+                <!-- Education -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">การศึกษา</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        กำลังศึกษาที่ <br> 
+                        <span class="font-medium">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</span>
+                    </p>
+                </div>
+                
+                <!-- Contact -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">ช่องทางติดต่อ</h2>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            69202302004@scphkk.ac.th
+                        </li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- Right Column -->
+            <div class="space-y-6">
+                
+                <!-- Goals & Motto -->
+                <div class="bg-rose-50 p-5 rounded-2xl">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">ความใฝ่ฝัน</h2>
+                    <p class="text-gray-700 mb-4">นักวิชาการสาธารณสุข</p>
+
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">คติประจำใจ</h2>
+                    <p class="text-gray-700 italic">"ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"</p>
+                </div>
+
+                <!-- Hobbies -->
+                <div class="bg-rose-50 p-5 rounded-2xl h-full">
+                    <h2 class="text-xl font-semibold text-rose-700 mb-3 border-b-2 border-rose-200 inline-block pb-1">งานอดิเรก</h2>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside mt-2">
+                        <li>อ่านหนังสือ</li>
+                        <li>ฟังเพลง</li>
+                        <li>ดูหนัง</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-gray-50 text-center py-4 text-sm text-gray-400">
+            &copy; 2026 Krittiya Phowiangkham. All rights reserved.
         </div>
     </div>
 
